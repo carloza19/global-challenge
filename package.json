@@ -5,8 +5,8 @@
     "main": "index.js",
     "scripts": {
         "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\" ",
-        "start:backend": "cd api-global && ts-node-dev src/index.ts",
-        "start:frontend": "cd app-global && npm start",
+        "start:backend": "cd api && ts-node-dev src/index.ts",
+        "start:frontend": "cd app && npm start",
         "build": "cd api-global && npm run tsc",
         "test": "cross-env NODE_ENV=test jest --verbose"
     },
@@ -37,6 +37,7 @@
         "ts-node-dev": "^2.0.0"
     },
     "dependencies": {
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
         "@babel/plugin-transform-nullish-coalescing-operator": "^7.24.1",
         "@babel/plugin-transform-numeric-separator": "^7.24.1",
         "@babel/plugin-transform-private-property-in-object": "^7.24.1",

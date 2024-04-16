@@ -1,0 +1,29 @@
+{
+  "name": "api-global",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development ts-node-dev src/index.ts",
+    "start": "cross-env NODE_ENV=production node build/index.js",
+    "tsc": "tsc",
+    "test": "cross-env NODE_ENV=test jest --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "eslintConfig": {
+    "extends": "/node_modules/ts-standard/eslintrc.json",
+    "env": {
+      "jest": true
+    }
+  },
+  "presets": ["@babel/preset-react"],
+  "plugins": ["@babel/plugin-transform-numeric-separator" , "@babel/plugin-transform-private-methods"],
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.tsx?$": "babel-jest"
+    }
+  }
+}
