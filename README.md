@@ -32,11 +32,10 @@ This project was created as part of the selection process of the company Global 
 ## Description
 The tests are carried out separately
 
-## Usage
+##
 `cd api-globla && npm run test`
-## Start test api
+## Start test in the api
 
 
 `cd app-globla && npm run test`
-## Start test app
-##
+## Start test in the app
