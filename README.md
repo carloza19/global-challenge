@@ -7,7 +7,7 @@
 This project was created as part of the selection process of the company Global Think
 
 
-`git clone [repository_url]`
+`git clone git@github.com:carloza19/global-challenge.git`
 ### Step 1: Clone the project
 
 
